@@ -258,7 +258,7 @@ class AirQualityAnalysis:
         plt.xlabel("Date")
         plt.ylabel("CO Level")
         plt.xticks(rotation=45)
-        plt.tight_layout
+        plt.tight_layout()
 
         # 4. Heatmap
         plt.subplot(2, 2, 4)
