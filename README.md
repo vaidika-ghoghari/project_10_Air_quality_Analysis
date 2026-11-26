@@ -1,75 +1,85 @@
 # Air Quality Analysis and Visualization
 
-## 📌 Project Overview
+A Python-based data analysis project that explores air pollution measurements using Pandas, NumPy, Matplotlib, and Seaborn. This project performs exploratory data analysis (EDA), calculates pollutant statistics, handles missing values, and visualizes air quality patterns through different charts.
 
-Air Quality Analysis and Visualization is a Python-based data analysis project that analyzes air pollution measurements using Pandas, NumPy, Matplotlib, and Seaborn.
+## Project Overview
 
-The project helps users understand pollutant levels, calculate statistical metrics, filter air quality records, handle missing values, and visualize data through different charts.
+Air quality is an important environmental factor that affects human health and the environment. This project analyzes air quality measurements to understand pollutant concentrations and identify patterns in the dataset.
 
-## 🎯 Project Objectives
+The project provides a simple menu-driven interface to load data, calculate statistical metrics, filter records, display dataset summaries, and generate visualizations.
 
-- Load and analyze an air quality dataset.
-- Calculate average, maximum, and minimum pollutant values.
-- Filter records based on pollutant levels.
+## Objectives
+
+- Analyze air quality data using Python.
+- Calculate average, minimum, and maximum pollutant values.
+- Filter records based on pollutant concentrations.
 - Identify and handle missing values.
-- Display dataset summaries.
-- Visualize air quality measurements using charts.
+- Display dataset information and statistical summaries.
+- Create visualizations to understand pollutant distributions and relationships.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+| Technology | Purpose |
+|---|---|
+| Python | Application development |
+| Pandas | Data manipulation and analysis |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
 
-## ✨ Features
+## Dataset
+
+The project uses the Air Quality dataset containing air pollution measurements collected from an air quality monitoring station.
+
+**Dataset Source:** [UCI Machine Learning Repository – Air Quality Dataset](https://archive.ics.uci.edu/dataset/360/air+quality)
+
+The dataset contains measurements of several pollutants, including:
+
+- CO – Carbon Monoxide
+- C6H6 – Benzene
+- NOx – Nitrogen Oxides
+- NO2 – Nitrogen Dioxide
+
+The dataset uses `-200` to represent missing measurement values.
+
+## Features
 
 ### 1. Load Dataset
-- Load the air quality CSV dataset.
-- Display dataset columns and first five records.
-- Display the total number of records.
+
+- Load the CSV dataset.
+- Display the first five records.
+- Display column names and total records.
 
 ### 2. Calculate Metrics
-Calculate the following metrics for selected pollutants:
+
+Calculate the following statistical metrics for selected pollutants:
 
 - Average
 - Maximum
 - Minimum
 
-Pollutants:
-- CO (Carbon Monoxide)
-- C6H6 (Benzene)
-- NOx (Nitrogen Oxides)
-- NO2 (Nitrogen Dioxide)
-
 ### 3. Filter Data
-Filter air quality records using a minimum value for:
+
+Filter air quality records using minimum pollutant values for:
+
 - CO
 - NO2
 - NOx
 - Benzene
 
-### 4. Display Summary
-Display:
+### 4. Display Dataset Summary
+
+Display important information about the dataset:
+
 - First five records
 - Statistical summary
-- Missing values
+- Missing-value counts
 - Dataset information
 - Total records and columns
 
-### 5. Show Charts
+### 5. Data Cleaning
 
-The project displays four visualizations together:
-
-1. **Bar Chart:** Average pollutant levels.
-2. **Pie Chart:** CO concentration distribution (Low, Medium, High).
-3. **Line Chart:** CO levels over time.
-4. **Heatmap:** Correlation between pollutants and environmental measurements.
-
-## 🧹 Missing Value Handling
-
-The dataset uses `-200` to represent missing measurement values.
+The dataset contains missing values represented by `-200`.
 
 The project handles missing values by:
 
@@ -78,36 +88,62 @@ The project handles missing values by:
 3. Filling missing numeric measurement values using the median.
 4. Displaying missing-value counts after handling.
 
-## 📂 Project Structure
+### 6. Data Visualization
+
+The project generates four visualizations:
+
+| Chart | Purpose |
+|---|---|
+| Bar Chart | Compare average pollutant levels |
+| Pie Chart | Show CO concentration categories |
+| Line Chart | Visualize CO levels over time |
+| Heatmap | Examine correlations between pollutants and environmental measurements |
+
+## Project Structure
 
 ```text
-Air-Quality-Analysis/
+project_10_air_quality_analysis/
 │
 ├── main.py
 ├── air_quality.csv
 └── README.md
 ```
 
-## ⚙️ Installation
+## Installation
 
-Install the required Python libraries:
+Make sure Python is installed on your system.
+
+Install the required libraries:
 
 ```bash
 pip install pandas numpy matplotlib seaborn
 ```
 
-## ▶️ How to Run
+## How to Run
 
-1. Download or clone the project.
-2. Keep `air_quality.csv` in the same folder as `main.py`.
-3. Open the project folder in VS Code or IDLE.
-4. Run the following command:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/vaidika-ghoghari/project_10_Air_quality_Analysis.git
+```
+
+2. Open the project folder:
+
+```bash
+cd project_10_Air_quality_Analysis
+```
+
+3. Make sure `air_quality.csv` is in the same folder as `main.py`.
+
+4. Run the program:
 
 ```bash
 python main.py
 ```
 
-## 📋 Main Menu
+## Main Menu
+
+The application provides the following options:
 
 ```text
 ========== AIR QUALITY ANALYSIS ==========
@@ -120,18 +156,28 @@ python main.py
 6. Exit
 ```
 
-## 🔗 Connect With Me
+Select an option from the menu to perform the required analysis.
 
-- **LinkedIn:** [Visit My LinkedIn Profile](https://www.linkedin.com/in/vaidika-ghoghari-2196a534a)
-- **Email:** [Contact Me](mailto:ghogharivaidika@gmail.com)
-- **Project Explanation Video:** [Watch Project Video](YOUR_VIDEO_URL)
+## Conclusion
 
-## 👩‍💻 Author
+This project demonstrates how Python libraries can be used to perform exploratory data analysis on air quality measurements.
+
+Through data cleaning, statistical calculations, filtering, and visualization, the project helps understand pollutant concentrations and patterns in the dataset.
+
+The visualizations provide a clear representation of pollutant levels, changes over time, and relationships between environmental measurements.
+
+## Author
 
 **Vaidika Ghoghari**
 
-Python | Data Analysis | NumPy | Pandas | Data Visualization
+Python | Data Analysis | Pandas | NumPy | Data Visualization
+
+## Connect With Me
+
+- GitHub: [Vaidika Ghoghari](https://github.com/vaidika-ghoghari)
+- LinkedIn: [Visit My LinkedIn Profile](https://www.linkedin.com/)
+- Email: [ghogharivaidika@gmail.com](mailto:ghogharivaidika@gmail.com)
 
 ---
 
-*This project is developed for learning and practicing Python data analysis and visualization techniques.*
+This project was developed for learning and practicing Python data analysis and visualization techniques.
